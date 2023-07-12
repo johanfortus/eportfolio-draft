@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johan Fortus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_K1PoFs8pB2YVWStDxrUls");
+    })();
+  </script>
+</head>
+
+<body>
+  <section id="landing-page">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets/logo.png" alt="">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Projects</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Contact</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          "><i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+   
+    <header class="header">
+      <div class="header__content">
+        <h3 class="title">Hi, my name is</h3>
+        <h1 class="sub-title orange">Johan Fortus</h3>
+        <h3 class="title">And I'm a <span class="multiple-text"></span></h3>
+        <p class="header__para">
+          <!-- I have a strong passion for building web applications
+          with great user
+          experiences. -->
+          I am an undergraduate student at the University of Florida pursuing a degree in Computer Science.
+          <br>
+          Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
+        </p>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/johanfortus/" target="_blank" class="social__link click">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/johanfortus/" target="_blank" class="social__link click">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="./assets/Johan Fortus Resume.pdf" target="_blank" class="social__link click">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+        </div>
+      </div>
+      <di class="headshot">
+        <img class="img-fluid" src="assets/IMG_1368.jpg" alt="">
+      </div>
+     
+    </header>
+ 
+ 
+
+  
+
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">Aspiring Software Engineer.</h4>
+        <p class="modal__para">
+          I am a 21-year-old <b class="orange">computer science student</b> with a strong passion for technology. I am working towards becoming a skilled <b class="orange">software engineer</b> in the future. 
+          <br>
+          Currently, I am actively seeking <b class="orange">internship opportunities</b> to enhance my practical skills and gain real-world <b class="orange">experience</b> in the field. 
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt="">
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
+            <span class="language__name">React</span>
+          </figure>
+
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-512/free-python-2-226051.png?f=avif&w=512" alt="">
+            <span class="language__name">Python</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
+              alt="">
+            <span class="language__name">NodeJS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" alt="">
+            <span class="language__name">Express</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" alt="">
+            <span class="language__name">Firebase</span>
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          I'm currently open to new opportunities.
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit" style="background-color: #376cff;">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon.
+        </div>
+      </div>
+    </div>
+    <!-- <img src="./assets/semi circle.svg" class="shape shape--0">
+    <img src="./assets/circle.svg" class="shape shape--1">
+    <img src="./assets/squiggly.svg" class="shape shape--2">
+    <img src="./assets/circle.svg" class="shape shape--3">
+    <img src="./assets/triangle.svg" class="shape shape--4">
+    <img src="./assets/circle.svg" class="shape shape--5">
+    <img src="./assets/squiggly.svg" class="shape shape--6">
+    <img src="./assets/circle.svg" class="shape shape--7">
+    <img src="./assets/semi circle.svg" class="shape shape--8"> -->
+
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="orange">projects</span>
+        </h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/google mockup.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Jobly
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Javascript ES6, React, Express, and PostgreSQL
+                </h4>
+                <p class="project__description--para">
+                  Jobly is a full stack web application of a mock job board site where users can sign up and login. Logged in users gain access to a list of companies with search and filtering capabilities. Each company has a list of job postings that a user can view. A user may apply to a job posting, but each user is restricted from duplicate applications to a single job posting posted by a company.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/johanfortus/" target="_blank"
+                  class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+                  <a href="https://googleinstore.com.au/" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Frontend Simplified.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Warbler (Twitter Clone)
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Python, Flask, PostgreSQL
+                </h4>
+                <p class="project__description--para">
+                  Created a Full-stack Twitter clone including features for posting messages, liking posts, following users, handling account details, and login/logout authentication.
+                  Added user authentication/authorization to RESTful API routes utilizing Bcrypt password hashing.
+                  Managed many-to-many database relationships with Python ORM SQLAlchemy.                  
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/johanfortus/" target="_blank"
+                  class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://github.com/johanfortus/" target="_blank" class="project__description--link">
+                  <i class="fas fa-link"></i>
+                </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Eportfolio YT.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Final Frontier NASA API
+                </h3>
+                <h4 class="project__description--sub-title">
+                  JavaScript ES6, React, HTML, CSS/Bootstrap
+                </h4>
+                <p class="project__description--para">
+                  Created a Front-end web application that highlights NASA's space explorations.
+                  Utilized the NASA API and Axios to dynamically display data of NASA’s image library.
+                  Implemented searching, user authentication, and CRUD functionality with the use of Firebase.                                 
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/johanfortus/" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://github.com/johanfortus/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="./assets/logo.ico" class="footer__logo--img" alt="">
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://github.com/johanfortus/" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/johanfortus/" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            LinkedIn
+          </a>
+          <a href="#" onclick="toggleModal()" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Contact
+          </a>
+          <a href="./assets/Johan Fortus Resume.pdf" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Resume
+          </a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2023 Johan Fortus</div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
